@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/feedbackapp.iml" filepath="$PROJECT_DIR$/feedbackapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/learningreact.iml" filepath="$PROJECT_DIR$/learningreact.iml" />
     </modules>
   </component>
