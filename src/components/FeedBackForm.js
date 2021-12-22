@@ -1,5 +1,6 @@
 import { useState} from "react";
 import Card from './shared/Card'
+import Button from './shared/Button'
 
 
 function FeedBackForm() {
@@ -15,7 +16,7 @@ function FeedBackForm() {
             <h2>How would you rate your service with us?</h2>
             <div className="input-group">
                 <input onChange={handleTextChange} type="text" value={text} placeholder='Write a review'/>
-                <button type="submit">Send</button>
+                <Button type="submit" version='primary'>Send</Button>
             </div>
         </form>
     </Card>
