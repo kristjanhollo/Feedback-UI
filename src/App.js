@@ -7,6 +7,7 @@ import {useState} from "react";
 import FeedbackStats from "./components/FeedbackStats";
 import FeedBackForm from "./components/FeedBackForm";
 import AboutPage from './components/pages/AboutPage';
+import { FeedBackProvider } from './context/FeedbackContext';
 import AboutIconLink from './components/AboutIconLink';
 import { v4 as uuidv4 } from 'uuid'
 
@@ -27,6 +28,7 @@ function App() {
     }
 
     return (
+        <FeedBackProvider>
         <Router>
             <Header/>
             <div className="container">
@@ -34,8 +36,8 @@ function App() {
                 <Route exact path='/' element={
                     <>
                     <FeedBackForm handleAdd={addFeedback}/>
-                    <FeedbackStats feedback={feedback}/>
-                    <FeedbackList feedback={feedback} handleDelete={deleteFeedBack}/>
+                    <FeedbackStats />
+                    <FeedbackList handleDelete={deleteFeedBack}/>
                     </>
                 }>
                 
@@ -45,6 +47,7 @@ function App() {
                 <AboutIconLink />
             </div>
         </Router>
+        </FeedBackProvider>
     )
 }
 
