@@ -1,0 +1,24 @@
+{
+  "feedback": [
+    {
+      "id": 1,
+      "rating": 10,
+      "text": "This is item number 1 with rating 10 from DB.json"
+    },
+    {
+      "id": 2,
+      "rating": 3,
+      "text": "This is item number 2 with rating 3 from DB.json"
+    },
+    {
+      "id": 3,
+      "rating": 6,
+      "text": "This is item number 3 with rating 6 from DB.json"
+    },
+    {
+      "text": "erhygererher",
+      "rating": 4,
+      "id": 4
+    }
+  ]
+}
