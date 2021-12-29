@@ -13,7 +13,7 @@ export const FeedBackProvider = ({children}) => {
   })
 
 
-  
+
 
   // Edit feedback
 
@@ -49,6 +49,7 @@ const updateFeedback = (id, updItem) => {
 
 }
 
+// eslint-disable-next-line no-lone-blocks
 {/*
 const fetchFeedback = async () => {
 const response = await fetch('/feedback?_sort=id&_order=desc')
